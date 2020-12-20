@@ -1,0 +1,120 @@
+* {
+    /* outline: 1px solid chartreuse; */
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: indigo;
+}
+
+
+
+#container_main, #container_logo, #container_idioma {
+    display: flex;
+}
+#container_main, #container_logo, #container_idioma{
+    justify-content: space-between;
+}
+#container_main, #container_idioma {
+    align-items: center;
+}
+header nav {
+    width: 100%;
+    height: 50px;
+    background-color: black; 
+}
+#container_main {
+    width: 100%;
+    height: 50px;
+}
+#container_logo {
+    padding-left: 20px;
+    width: 180px;
+}
+#bra {
+    width: 34px;
+}
+#nome {
+    width:130px;
+}
+#container_idioma {
+    width:37px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#mapa_main{
+    width: 30px;   
+}
+#container_idioma p{
+    color: white;
+    font-family: OpenSans,sans-serif,arial;
+    font-size: 9px;
+    word-spacing: 2px;
+}
+
+
+
+section article, #container_painel, #container_painel header, #corpo_botoes {
+    display: flex;   
+}
+section article, #container_painel {
+    align-items: center;
+}
+#container_painel {
+    flex-direction: column;
+    margin-top: 10%;
+}
+#container_painel header{
+    justify-content: center;
+}
+#corpo_botoes {
+    flex-direction: column;   
+}
+#corpo_botoes article {
+    margin-bottom: 5%;    
+}
+#corpo_botoes article a {
+    border-radius: 10px;
+    margin: 0 50px 0 50px;
+    width: 100%;
+    height: 25px;
+    font-family: monospace;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: center;
+}
+#branco {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 0.5em white;
+}
+#branco:hover{
+    font-weight: bold;
+    box-shadow: 0 0 1em white;
+    transition: 0.6s ease;
+} 
+#preto {
+    color: white;
+    background-color:black;
+    box-shadow: 0 0 0.5em black;
+}
+#preto:hover{
+    color: aqua;
+    font-weight: bold;
+    box-shadow: 0 0 1em aqua;
+    transition: 0.6s ease;    
+}
+#armor {
+    width: 30%;
+    margin-top: 11%;
+    margin-left: 12%;
+}
+#sword{
+    width: 65%;
+    transform: translateX(-10%);
+}

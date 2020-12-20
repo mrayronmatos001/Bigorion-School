@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="143" height="35" viewBox="0 0 143 35">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 48px;
+        fill: aqua;
+        font-family: "Burbank Big Condensed";
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        font-size: 45px;
+      }
+
+      .cls-3 {
+        font-size: 42px;
+      }
+
+      .cls-4 {
+        font-size: 40px;
+      }
+    </style>
+  </defs>
+  <text id="BIGORION" class="cls-1" x="-0.4" y="34">B<tspan class="cls-2">I<tspan class="cls-3">G<tspan class="cls-4">OR</tspan>I</tspan>O</tspan>N</text>
+</svg>

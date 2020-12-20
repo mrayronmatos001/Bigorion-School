@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 1px solid chartreuse;
+}
+body {
+    background-color: indigo;
+    overflow: hidden;
+}
+
+
+
+header nav {
+    width: 100%;
+    height: 50px;
+    background-color: black; 
+}

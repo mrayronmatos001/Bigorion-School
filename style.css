@@ -96,7 +96,7 @@ section article, #container_painel {
 #branco:hover{
     font-weight: bold;
     box-shadow: 0 0 1em white;
-    transition: 0.6s ease;
+    /* transition: 0.6s ease; */
 } 
 #preto {
     color: white;
@@ -107,7 +107,7 @@ section article, #container_painel {
     color: aqua;
     font-weight: bold;
     box-shadow: 0 0 1em aqua;
-    transition: 0.6s ease;    
+    /* transition: 0.6s ease;     */
 }
 #armor {
     width: 30%;

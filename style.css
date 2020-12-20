@@ -47,12 +47,6 @@ header nav {
 #mapa_main{
     width: 30px;   
 }
-#container_idioma p{
-    color: white;
-    font-family: OpenSans,sans-serif,arial;
-    font-size: 9px;
-    word-spacing: 2px;
-}
 
 
 
@@ -96,7 +90,6 @@ section article, #container_painel {
 #branco:hover{
     font-weight: bold;
     box-shadow: 0 0 1em white;
-    /* transition: 0.6s ease; */
 } 
 #preto {
     color: white;
@@ -107,7 +100,6 @@ section article, #container_painel {
     color: aqua;
     font-weight: bold;
     box-shadow: 0 0 1em aqua;
-    /* transition: 0.6s ease;     */
 }
 #armor {
     width: 30%;

@@ -110,7 +110,7 @@ header {
 #espada {
     width: 700px;
     margin-bottom: 25px;
-    margin-top: 5%;
+    margin-top: 20%;
     transform: translateX(-7%);
 }
 #area_botoes {
@@ -131,6 +131,10 @@ a {
 }
 a p {
     transform: translateY(-13px);
+}
+#area_botoes a:hover {
+    transform: scale(1.05);
+    transition: .2s ease;
 }
 .branco {
     color: black;

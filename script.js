@@ -24,7 +24,7 @@ container.onmouseout = function() {
         img.src = "img/mapa.svg"
     }
 }
-    
+
 container.onclick = function() {
     lista.classList.toggle('ativa');
     container.classList.toggle('caixa');

@@ -15,42 +15,47 @@
     <meta http-equiv="pragma" content="public">
     <meta http-equiv="content-language" content="pt-br, en-us">
     <link rel="icon" href="img/logotipo.svg">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-teste.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">   
     <title> BIGORION | Seja um Fisiqueste </title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div id="container_main">
-                <div id="container_logo">
-                    <img src="img/icone.svg" alt="icone do tipo imagem" id="bra">
-                    <img src="img/icone2.svg" alt="icone do tipo texto" id="nome">
-                </div>
-                <div id="container_idioma">
-                    <img src="img/mapa.svg" alt="imagem seleção de idioma" id="mapa_main">
-                </div>
-            </div>
+    <header id="header1">
+        <div class="container_logo">
+            <img id="brasao" src="img/icone.svg" alt="imagem logo">
+            <img id="bigorion" src="img/icone2.svg" alt="icone do tipo texto">
+        </div>
+        <nav id="caixa">
+            <img src="img/mapa.svg" alt="idioma">
+            <ul  class="ativa">
+                <li>
+                    <p>Inglês</p>
+                </li>
+                <li>
+                    <p>Português</p>
+                </li>
+                <li>
+                    <p>Espanhol</p>
+                </li>
+            </ul>
         </nav>
     </header>
     <section>
-        <article>
-            <img src="img/amor.svg" alt="imagem de formato armadura" id="armor">
-            <div id="container_painel">
-                <header>
-                    <img src="img/sword.svg" alt="imagem do painel de botões" id="sword">
-                </header>
-                <section id="corpo_botoes">
-                    <article>
-                        <a href="#" id="branco"><p id="p_branco">Eu aceito o desafio</p></a>
-                    </article>
-                    <article>
-                        <a href="#" id="preto"><p>Já sou um Fisiqueste</p></a>
-                    </article>
-                </section>
-            </div>
-        </article>
+        <img id="armadura" src="img/amor.svg" alt="personagem">
+        <div id="container_painel">
+            <header>
+                <img id="espada" src="img/sword.svg" alt="cabe&ccedil;alho painel">
+            </header>
+            <section id="area_botoes">
+                <a class="branco" href="#"><p>Eu aceito o desafio</p></a>
+                <a class="preto" href="#"><p>Já sou um Fisiqueste</p></a>
+            </section>
+        </div>
     </section>
-    <footer></footer>
+    <footer>
+
+    </footer>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

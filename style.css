@@ -11,102 +11,143 @@ body {
 
 
 
-#container_main, #container_logo, #container_idioma {
-    display: flex;
-}
-#container_main, #container_logo, #container_idioma{
-    justify-content: space-between;
-}
-#container_main, #container_idioma {
-    align-items: center;
-}
-header nav {
+#header1 {
     width: 100%;
     height: 50px;
     background-color: black; 
-}
-#container_main {
-    width: 100%;
-    height: 50px;
-}
-#container_logo {
-    padding-left: 20px;
-    width: 180px;
-}
-#bra {
-    width: 34px;
-}
-#nome {
-    width:130px;
-}
-#container_idioma {
-    width:37px;
-    padding-right: 10px;
-    cursor: pointer;
-}
-#mapa_main{
-    width: 30px;   
-}
-
-
-
-section article, #container_painel, #container_painel header, #corpo_botoes {
-    display: flex;   
-}
-section article, #container_painel {
-    align-items: center;
-}
-#container_painel {
-    flex-direction: column;
-    margin-top: 10%;
-}
-#container_painel header{
-    justify-content: center;
-}
-#corpo_botoes {
-    flex-direction: column;   
-}
-#corpo_botoes article {
-    margin-bottom: 5%;    
-}
-#corpo_botoes article a {
-    border-radius: 10px;
-    margin: 0 50px 0 50px;
-    width: 100%;
-    height: 25px;
-    font-family: monospace;
-    text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 10px;
-    font-size: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
-#branco {
+.container_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 180px;
+}
+#brasao {
+    width: 34px;
+}
+#bigorion {
+    width: 130px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 230px;
+    background-color: none;
+    border-radius: 20px;
+    transition: .3s ease;
+    border: none;
+}
+nav img {
+    margin-top:101px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+nav ul {
+    list-style-type: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9px;
+}
+nav ul li {
+    color: white;
+    font-family: monospace;
+    margin-left:-40px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    transition: .1s ease;
+}
+nav ul li:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 15px;
+    transform: scale(1.05);
+}
+nav ul li p {
+    padding: 5px;
+    font-size: 10px;
+    font-family: 'Inconsolata', monospace;
+    transform: translateY(-5px);
+}
+.ativa {
+    display: none;
+}
+.caixa {
+    background-color: black;
+    border: 5px solid cyan;
+}
+
+
+
+section {
+    display: flex;
+}
+#armadura {
+    margin-top: 9.8%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#container_painel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+#espada {
+    width: 700px;
+    margin-bottom: 25px;
+    margin-top: 5%;
+    transform: translateX(-7%);
+}
+#area_botoes {
+    display: flex;
+    align-items: center;
+    width: 550px;
+    height: 100px;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    height: 25px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+a p {
+    transform: translateY(-13px);
+}
+.branco {
     color: black;
     background-color: white;
     box-shadow: 0 0 0.5em white;
 }
-#branco:hover{
+.branco:hover {
     font-weight: bold;
     box-shadow: 0 0 1em white;
-} 
-#preto {
+}
+.preto {
     color: white;
     background-color:black;
     box-shadow: 0 0 0.5em black;
 }
-#preto:hover{
+.preto:hover {
     color: aqua;
     font-weight: bold;
     box-shadow: 0 0 1em aqua;
-}
-#armor {
-    width: 30%;
-    margin-top: 11%;
-    margin-left: 12%;
-}
-#sword{
-    width: 65%;
-    transform: translateX(-10%);
 }

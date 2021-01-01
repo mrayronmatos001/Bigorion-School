@@ -1,0 +1,87 @@
+* {
+    /* outline: 1px solid chartreuse; */
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: indigo;
+}
+
+
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 180px;
+}
+#brasao {
+    width: 34px;
+}
+#bigorion {
+    width: 130px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 230px;
+    background-color: none;
+    border-radius: 20px;
+    transition: .3s ease;
+    border: none;
+}
+nav img {
+    margin-top:101px;
+    width: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+nav ul {
+    list-style-type: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9px;
+}
+nav ul li {
+    color: white;
+    font-family: monospace;
+    margin-left:-40px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    transition: .1s ease;
+}
+nav ul li:hover {
+    background-color: aqua;
+    color: black;
+    border-radius: 15px;
+    transform: scale(1.05);
+}
+nav ul li p {
+    padding: 5px;
+    font-size: 10px;
+    font-family: 'Inconsolata', monospace;
+    transform: translateY(-5px);
+}
+.ativa {
+    display: none;
+}
+.caixa {
+    background-color: black;
+    border: 5px solid cyan;
+}

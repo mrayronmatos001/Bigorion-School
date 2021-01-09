@@ -46,3 +46,26 @@ window.addEventListener('click', function(event) {
     container.classList.remove('caixa');
   }
 });
+
+const lis = [...document.querySelectorAll("#caixa>ul>li")];
+
+lis.forEach(li => {
+  li.onmouseover = e => {
+    const p = li.querySelector('p');
+    const img = li.querySelector('img')
+    p.style.display = 'none'
+    p.style.zIndex = '-1'
+    img.style.display = 'block'
+  }
+  li.onmouseout = e => {
+    const p = li.querySelector('p');
+    const img = li.querySelector('img')
+    p.style.display = 'block'
+    p.style.zIndex = '1'
+    img.style.display = 'none'
+  }
+})
+
+
+function funcao(e) {}
+(e, f) => {}

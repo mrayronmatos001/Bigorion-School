@@ -50,6 +50,9 @@ nav > img {
   margin-left: 20px;
   cursor: pointer;
 }
+nav > ul > li > img {
+  transform: scale(0.9);
+}
 nav ul {
   list-style-type: flex;
   display: flex;
@@ -78,11 +81,21 @@ nav ul li:hover {
   border-radius: 15px;
   transform: scale(1.05);
 }
+#vermelho:hover {
+  background-color: crimson;
+}
+#verde:hover {
+  background-color: lawngreen;
+}
+#laranja {
+  transform: translateY(-0.2px);
+}
+#laranja:hover {
+  background-color: darkorange;
+}
 nav ul li p {
-  /* padding: 5px; */
   font-size: 10px;
   font-family: "Inconsolata", monospace;
-  /* transform: translateY(-5px); */
 }
 .ativa {
   display: block;
@@ -124,46 +137,33 @@ header {
 #area_botoes {
   display: flex;
   align-items: center;
-  width: 550px;
-  height: 100px;
+  width: 700px;
+  height: 130px;
   justify-content: space-around;
 }
 a {
   text-decoration: none;
   height: 25px;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Gorditas', cursive;
   padding: 6px 10px;
   font-size: 17px;
-  border-radius: 10px;
 }
 a p {
   transform: translateY(-13px);
 }
-#area_botoes a:hover {
-  transform: scale(1.05);
-  transition: 0.2s ease;
-}
 .branco {
   color: black;
   background-color: white;
-  box-shadow: 0 0 0.5em white;
-}
-.branco:hover {
-  font-weight: bold;
-  box-shadow: 0 0 1em white;
+  transform: translateX(25px);
+  box-shadow: 0 0 0.3em white;
 }
 .preto {
-  color: white;
-  background-color: black;
-  box-shadow: 0 0 0.5em black;
-}
-.preto:hover {
   color: aqua;
-  font-weight: bold;
-  box-shadow: 0 0 1em aqua;
+  background-color: black;
+  transform: translateX(-25px);
+  box-shadow: 0 0 0.4em aqua;
 }
-
 #caixa ul li img {
   display: none;
   width: 30px;

@@ -7,6 +7,7 @@ const bandeiraEspanha = document.querySelector('img#bandeira_espanha')
 const listausa = document.querySelector('li#li_1')
 const listabrasil = document.querySelector('li#li_2')
 const listaespanha = document.querySelector('li#li_3')
+const listamain = document.querySelector('li#li_main')
 let alavanca = false
 let ativo = false
 let fora = false
@@ -55,16 +56,16 @@ mapa.onmouseout = () => {
 nav.onmouseover = () => fora = false
 nav.onmouseout = () => fora = true
 window.addEventListener('click', function () {
-    if (fora) {
+    if(fora){
         mapa.src = "img/cabecalho/menu/menuidioma/mapa.svg"
         ul.style.backgraundColor = "rgba(0,0,0,0)"
-        ul.style.borderRadius = "0 0 0 0";
-        ul.style.borderTop = "0px solid aqua"
         bandeiraUsa.style.display = "none"
         bandeiraBrasil.style.display = "none"
         bandeiraEspanha.style.display = "none"
+        mapa.classList.remove('loope')
+        alavanca = false
         ativo = false
-    }
+    } 
 })
 listausa.onclick = () => {
     bandeiraUsa.classList.toggle("ligado")

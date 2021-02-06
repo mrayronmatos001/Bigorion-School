@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title> BIGORION | Seja um Fisiqueste </title>
     <meta charset="UTF-8">
@@ -11,55 +12,62 @@
     <meta name="copyright" content="Bigorion Enterprise">
     <meta name="generator" content="Visual Studio Code">
     <meta name="rating" content="general">
-    <meta http-equiv="refresh" content="360">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1">
     <meta http-equiv="pragma" content="public">
     <meta http-equiv="content-language" content="pt-br, en-us">
-    <link rel="icon" href="img/logotipo.svg">
+    <link rel="icon" href="img/cabecalho/logoside/logotipo.svg">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">   
-    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
-<body>
-    <header id="header1">
-        <div class="container_logo">
-            <img id="brasao" src="img/icone.svg" alt="imagem logo">
-            <img id="bigorion" src="img/icone2.svg" alt="icone do tipo texto">
+
+<body onload="deslocamento()">
+    <header>
+        <div id="container_logo">
+            <img id="brasao" src="img/cabecalho/logoside/icone.svg" alt="imagem logo">
+            <img id="bigorion" src="img/cabecalho/logoside/icone2.svg" alt="imagem bigorion">
         </div>
-        <nav id="caixa">
-            <img id="mapa" src="img/mapa.svg" alt="idioma">
-            <ul  class="">
-                <li id="vermelho">
-                    <p>Inglês</p>
-                    <img src="img/bandeira_usa.svg " alt="imagem bandeira">
-                </li>
-                <li id="verde">
-                    <p>Português</p>
-                    <img src="img/bandeira_brasil.svg " alt="imagem bandeira">
-                </li>
-                <li id="laranja">
-                    <p>Espanhol</p>
-                    <img src="img/bandeira_espanha.svg " alt="imagem bandeira">
-                </li>
-            </ul>
-        </nav>
+        <div id="container_menu">
+            <div class="box_title versao2">
+                <p>escolha seu idioma</p>
+            </div>
+            <nav id="caixa">
+                <ul>
+                    <li onclick="loopa()" id="li_main"><img id="mapa" src="img/cabecalho/menu/menuidioma/mapa.svg"></li>
+                    <li id="li_1"><img id="bandeira_usa" style="--border-bottom: 4px solid crimson" src="img/cabecalho/menu/menuidioma/bandeira_usa.svg"></li>
+                    <li id="li_2"><img id="bandeira_brasil" class="ligado" style="--border-bottom: 4px solid lawngreen" src="img/cabecalho/menu/menuidioma/bandeira_brasil.svg">
+                    </li>
+                    <li id="li_3"><img id="bandeira_espanha" style="--border-bottom: 4px solid darkorange" src="img/cabecalho/menu/menuidioma/bandeira_espanha.svg">
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn_pulso">
+            </button>
+            <div id="transparente">
+                <img id="apoio" src="img/cabecalho/menu/menuapoio/apoio.svg" alt="apoio">
+            </div>
+            <div class="box_title versao1">
+                <p>apoie o site</p>
+            </div>
+        </div>
     </header>
     <section>
-        <img id="armadura" src="img/armor.svg" alt="personagem">
-        <div id="container_painel">
-            <header>
-                <img id="espada" src="img/sword.svg" alt="cabe&ccedil;alho painel">
-            </header>
-            <section id="area_botoes">
-                <a class="branco" href="#"><p>EU ACEITO O DESAFIO</p></a>
-                <a class="preto" href="#"><p>JÁ SOU UM FISIQUESTE</p></a>
-            </section>
+        <div id="area_botoes">
+            <h1>desafie as leis da física</h1>
+            <div id="botao_branco">
+                <a href="#">
+                    <p>eu aceito o desafio</p>
+                </a>
+            </div>
+            <div id="botao_preto">
+                <a href="#">
+                    <p>já sou um fisiqueste</p>
+                </a>
+            </div>
         </div>
     </section>
-    <footer>
-
-    </footer>
-    <script type="text/javascript" src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>

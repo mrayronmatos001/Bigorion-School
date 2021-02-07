@@ -11,7 +11,9 @@ const listamain = document.querySelector('li#li_main')
 let alavanca = false
 let ativo = false
 let fora = false
+let c = 0 
 mapa.onclick = () => {
+    c++
     if (!alavanca) {
         ul.style.backgraundColor = "black"
         bandeiraUsa.style.display = "block"
@@ -20,19 +22,28 @@ mapa.onclick = () => {
         mapa.src = "img/cabecalho/menu/menuidioma/mapa_brasil.svg"
         alavanca = true
         ativo = true
-        
+        if(c==1) {
+            bandeiraBrasil.classList.add('ligado')
+        } else if(c!=1) {
+            if(cor==2) {
+                bandeiraBrasil.classList.add('ligado')
+            } 
+        }
     } else {
         ul.style.backgraundColor = "rgba(0,0,0,0)"
         bandeiraUsa.style.display = "none"
         bandeiraBrasil.style.display = "none"
         bandeiraEspanha.style.display = "none"
         mapa.src = "img/cabecalho/menu/menuidioma/mapa.svg"
+        if(c==2) {
+            bandeiraBrasil.classList.remove('ligado')
+        }
         alavanca = false
         ativo = false
         
     }
 }
-let cor = 2
+let cor
 mapa.onmouseover = () => {
     mapa.src = "img/cabecalho/menu/menuidioma/mapa2.svg"
     if(!ativo) {
@@ -98,6 +109,36 @@ listaespanha.onclick = () => {
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_spanish.svg"
     cor = 3  
     }
+listausa.onmouseover = () => {
+    if(!bandeiraUsa.classList.contains('ligado')) {
+        bandeiraUsa.style.filter = "grayscale(0)"
+    }
+}
+listausa.onmouseout = () => {
+    if(!bandeiraUsa.classList.contains('ligado')) {
+        bandeiraUsa.style.filter = "grayscale(1)"
+    }
+}
+listabrasil.onmouseover = () => {
+    if(!bandeiraBrasil.classList.contains('ligado')) {
+        bandeiraBrasil.style.filter = "grayscale(0)"
+    }
+}
+listabrasil.onmouseout = () => {
+    if(!bandeiraBrasil.classList.contains('ligado')) {
+        bandeiraBrasil.style.filter = "grayscale(1)"
+    }
+}
+listaespanha.onmouseover = () => {
+    if(!bandeiraEspanha.classList.contains('ligado')) {
+        bandeiraEspanha.style.filter = "grayscale(0)"
+    }
+}
+listaespanha.onmouseout = () => {
+    if(!bandeiraEspanha.classList.contains('ligado')) {
+        bandeiraEspanha.style.filter = "grayscale(1)"
+    }
+}
 const areaBotoes = document.querySelector('div#area_botoes')
 function deslocamento() {
     areaBotoes.style.marginLeft = "100px"
@@ -114,4 +155,4 @@ transparente.onmouseout = () => {
 }
 function loopa() {
     mapa.classList.toggle("loope")
-} 
+}

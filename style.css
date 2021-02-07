@@ -21,7 +21,7 @@ header{
 #container_logo{
     display: flex;
     justify-content: space-between;
-    width: 180px;
+    width: 185px;
     margin-left: 20px;
 }
 #container_menu{
@@ -39,7 +39,8 @@ nav {
     width: 34px;
 }
 #bigorion {
-    width: 130px;
+    width: 135px;
+    transform: translateY(5px);
 }
 #apoio {
     width: 40px;
@@ -213,6 +214,7 @@ a {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 .ligado {

@@ -80,63 +80,63 @@ window.addEventListener('click', function () {
 })
 listausa.onclick = () => {
     bandeiraUsa.classList.toggle("ligado")
-    bandeiraUsa.style.filter = "grayscale(0)"
+    bandeiraUsa.style.filter = "grayscale(0) brightness(115%)"
     bandeiraBrasil.classList.remove("ligado")
-    bandeiraBrasil.style.filter = "grayscale(1)"
+    bandeiraBrasil.style.filter = "grayscale(1) brightness(115%)"
     bandeiraEspanha.classList.remove("ligado")
-    bandeiraEspanha.style.filter = "grayscale(1)"
+    bandeiraEspanha.style.filter = "grayscale(1) brightness(115%)"
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_usa.svg"
     cor = 1
     }
 listabrasil.onclick = () => {
     bandeiraUsa.classList.remove("ligado")
-    bandeiraUsa.style.filter = "grayscale(1)"
+    bandeiraUsa.style.filter = "grayscale(1) brightness(115%)"
     bandeiraBrasil.classList.toggle("ligado")
-    bandeiraBrasil.style.filter = "grayscale(0)"
+    bandeiraBrasil.style.filter = "grayscale(0) brightness(115%)"
     bandeiraEspanha.classList.remove("ligado")
-    bandeiraEspanha.style.filter = "grayscale(1)"
+    bandeiraEspanha.style.filter = "grayscale(1) brightness(115%)"
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_brasil.svg"
     cor = 2
     }
      
 listaespanha.onclick = () => {
     bandeiraUsa.classList.remove("ligado")
-    bandeiraUsa.style.filter = "grayscale(1)"
+    bandeiraUsa.style.filter = "grayscale(1) brightness(115%)"
     bandeiraBrasil.classList.remove("ligado")
-    bandeiraBrasil.style.filter = "grayscale(1)"
+    bandeiraBrasil.style.filter = "grayscale(1) brightness(115%)"
     bandeiraEspanha.classList.toggle("ligado")
-    bandeiraEspanha.style.filter = "grayscale(0)"
+    bandeiraEspanha.style.filter = "grayscale(0) brightness(115%)"
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_spanish.svg"
     cor = 3  
     }
 listausa.onmouseover = () => {
     if(!bandeiraUsa.classList.contains('ligado')) {
-        bandeiraUsa.style.filter = "grayscale(0)"
+        bandeiraUsa.style.filter = "grayscale(0) brightness(115%)"
     }
 }
 listausa.onmouseout = () => {
     if(!bandeiraUsa.classList.contains('ligado')) {
-        bandeiraUsa.style.filter = "grayscale(1)"
+        bandeiraUsa.style.filter = "grayscale(1) brightness(115%)"
     }
 }
 listabrasil.onmouseover = () => {
     if(!bandeiraBrasil.classList.contains('ligado')) {
-        bandeiraBrasil.style.filter = "grayscale(0)"
+        bandeiraBrasil.style.filter = "grayscale(0) brightness(115%)"
     }
 }
 listabrasil.onmouseout = () => {
     if(!bandeiraBrasil.classList.contains('ligado')) {
-        bandeiraBrasil.style.filter = "grayscale(1)"
+        bandeiraBrasil.style.filter = "grayscale(1) brightness(115%)"
     }
 }
 listaespanha.onmouseover = () => {
     if(!bandeiraEspanha.classList.contains('ligado')) {
-        bandeiraEspanha.style.filter = "grayscale(0)"
+        bandeiraEspanha.style.filter = "grayscale(0) brightness(115%)"
     }
 }
 listaespanha.onmouseout = () => {
     if(!bandeiraEspanha.classList.contains('ligado')) {
-        bandeiraEspanha.style.filter = "grayscale(1)"
+        bandeiraEspanha.style.filter = "grayscale(1) brightness(115%)"
     }
 }
 const areaBotoes = document.querySelector('div#area_botoes')

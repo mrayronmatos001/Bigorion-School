@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br, en-us, es">
 
 <head>
     <title> BIGORION SCHOOL | Seja um Fisiqueste </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
     <meta name="description" content="BIGORION SCHOOL | Um jeito muito louco de aprender Física">
-    <meta name="keywords" content="bigorion, jogo de física, curso de física, aprender física, física divertida, exercício de Física, física, aprender física de forma divertida">
+    <meta name="keywords" content="bigorion, jogo de física, curso de física, aprender física, física divertida, exercício de física, física, aprender física de forma divertida">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Ayron Matos">
     <meta name="copyright" content="Bigorion School Enterprise">
@@ -14,7 +14,7 @@
     <meta name="rating" content="general">
     <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1">
     <meta http-equiv="pragma" content="public">
-    <meta http-equiv="content-language" content="pt-br, en-us">
+    <meta http-equiv="content-language" content="pt-br, en-us, es">
     <link rel="icon" href="img/cabecalho/logoside/logotipo.svg">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -23,52 +23,58 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet">
     <title>Document</title>
 </head>
-
-<body onload="deslocamento()">
+<body>
     <header>
         <div id="container_logo">
             <img id="brasao" src="img/cabecalho/logoside/icone.svg" alt="imagem logo">
             <img id="bigorion" src="img/cabecalho/logoside/icone2.svg" alt="imagem bigorion">
         </div>
         <div id="container_menu">
-            <div class="box_title versao2">
-                <p>escolha seu idioma</p>
+            <img id="quemSomos" src="img/cabecalho/menu/menuquemSomos/quemSomos.svg" alt="Quem nós somos">
+            <div class="box_title versao3">
+                <p lang="pt-br">Quem somos</p>
             </div>
             <nav id="caixa">
                 <ul>
                     <li onclick="loopa()" id="li_main"><img id="mapa" src="img/cabecalho/menu/menuidioma/mapa.svg"></li>
-                    <li id="li_1"><img id="bandeira_usa" style="--border-bottom: 4px solid crimson" src="img/cabecalho/menu/menuidioma/bandeira_usa.svg"></li>
-                    <li id="li_2"><img id="bandeira_brasil" style="--border-bottom: 4px solid lawngreen" src="img/cabecalho/menu/menuidioma/bandeira_brasil.svg">
+                    <li id="li_1"><img id="bandeira_usa" style="--border-bottom: 4px solid crimson"
+                            src="img/cabecalho/menu/menuidioma/bandeira_usa.svg"></li>
+                    <li id="li_2"><img id="bandeira_brasil" style="--border-bottom: 4px solid lawngreen"
+                            src="img/cabecalho/menu/menuidioma/bandeira_brasil.svg">
                     </li>
-                    <li id="li_3"><img id="bandeira_espanha" style="--border-bottom: 4px solid darkorange" src="img/cabecalho/menu/menuidioma/bandeira_espanha.svg">
+                    <li id="li_3"><img id="bandeira_espanha" style="--border-bottom: 4px solid darkorange"
+                            src="img/cabecalho/menu/menuidioma/bandeira_espanha.svg">
                     </li>
                 </ul>
             </nav>
+            <div class="box_title versao2">
+                <p lang="pt-br">escolha seu idioma</p>
+            </div>
             <button class="btn_pulso">
             </button>
             <div id="transparente">
                 <img id="apoio" src="img/cabecalho/menu/menuapoio/apoio.svg" alt="apoio">
             </div>
             <div class="box_title versao1">
-                <p>apoie o site</p>
+                <p lang="pt-br">apoie o site</p>
             </div>
         </div>
     </header>
     <section>
         <div id="area_botoes">
-            <h1>desafie as leis da física</h1>
+            <h1 lang="pt-br">desafie as leis da física</h1>
             <div id="botao_branco">
                 <a href="#">
-                    <p>eu aceito o desafio</p>
+                    <p lang="pt-br">eu aceito o desafio</p>
                 </a>
             </div>
             <div id="botao_preto">
                 <a href="#">
-                    <p>já sou um fisiqueste</p>
+                    <p lang="pt-br">já sou um fisiqueste</p>
                 </a>
             </div>
         </div>
     </section>
+    <script src="./header.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

@@ -11,7 +11,8 @@ const listamain = document.querySelector('li#li_main')
 let alavanca = false
 let ativo = false
 let fora = false
-let c = 0 
+let verde = false
+let c = 0
 mapa.onclick = () => {
     c++
     if (!alavanca) {
@@ -19,15 +20,17 @@ mapa.onclick = () => {
         bandeiraUsa.style.display = "block"
         bandeiraBrasil.style.display = "block"
         bandeiraEspanha.style.display = "block"
+        versao3.style.right = "358px"
         mapa.src = "img/cabecalho/menu/menuidioma/mapa_brasil.svg"
         alavanca = true
         ativo = true
-        if(c==1) {
+        verde = true
+        if (c == 1) {
             bandeiraBrasil.classList.add('ligado')
-        } else if(c!=1) {
-            if(cor==2) {
+        } else if (c != 1) {
+            if (cor == 2) {
                 bandeiraBrasil.classList.add('ligado')
-            } 
+            }
         }
     } else {
         ul.style.backgraundColor = "rgba(0,0,0,0)"
@@ -35,49 +38,58 @@ mapa.onclick = () => {
         bandeiraBrasil.style.display = "none"
         bandeiraEspanha.style.display = "none"
         mapa.src = "img/cabecalho/menu/menuidioma/mapa.svg"
-        if(c==2) {
-            bandeiraBrasil.classList.remove('ligado')
+        versao3.style.right = "215px"
+        if (contador != 0) {
+            if (c == 2) {
+                bandeiraBrasil.classList.remove('ligado')
+            }
         }
         alavanca = false
         ativo = false
-        
+
     }
 }
 let cor
 mapa.onmouseover = () => {
     mapa.src = "img/cabecalho/menu/menuidioma/mapa2.svg"
-    if(!ativo) {
+    if (!ativo) {
         versao2.style.display = "block"
     } else {
         versao2.style.display = "none"
     }
-    }
+}
 mapa.onmouseout = () => {
     versao2.style.display = "none"
-    if(!ativo) { 
+    if (!ativo) {
         mapa.src = "img/cabecalho/menu/menuidioma/mapa.svg"
-    } else if(cor == 1) {
+    } else if (cor == 1) {
         mapa.src = "img/cabecalho/menu/menuidioma/mapa_usa.svg"
-    } else if(cor == 2) {
+    } else if (cor == 2) {
         mapa.src = "img/cabecalho/menu/menuidioma/mapa_brasil.svg"
-    } else if(cor == 3) {
+    } else if (cor == 3) {
         mapa.src = "img/cabecalho/menu/menuidioma/mapa_spanish.svg"
+    } else {
+        if (verde) {
+            mapa.src = "img/cabecalho/menu/menuidioma/mapa_brasil.svg"
+        }
     }
 }
 nav.onmouseover = () => fora = false
 nav.onmouseout = () => fora = true
 window.addEventListener('click', function () {
-    if(fora){
+    if (fora) {
         mapa.src = "img/cabecalho/menu/menuidioma/mapa.svg"
         ul.style.backgraundColor = "rgba(0,0,0,0)"
         bandeiraUsa.style.display = "none"
         bandeiraBrasil.style.display = "none"
         bandeiraEspanha.style.display = "none"
         mapa.classList.remove('loope')
+        versao3.style.right = "215px"
         alavanca = false
         ativo = false
-    } 
+    }
 })
+let contador = 0
 listausa.onclick = () => {
     bandeiraUsa.classList.toggle("ligado")
     bandeiraUsa.style.filter = "grayscale(0) brightness(115%)"
@@ -87,7 +99,8 @@ listausa.onclick = () => {
     bandeiraEspanha.style.filter = "grayscale(1) brightness(115%)"
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_usa.svg"
     cor = 1
-    }
+    contador++
+}
 listabrasil.onclick = () => {
     bandeiraUsa.classList.remove("ligado")
     bandeiraUsa.style.filter = "grayscale(1) brightness(115%)"
@@ -97,8 +110,8 @@ listabrasil.onclick = () => {
     bandeiraEspanha.style.filter = "grayscale(1) brightness(115%)"
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_brasil.svg"
     cor = 2
-    }
-     
+    contador++
+}
 listaespanha.onclick = () => {
     bandeiraUsa.classList.remove("ligado")
     bandeiraUsa.style.filter = "grayscale(1) brightness(115%)"
@@ -107,42 +120,38 @@ listaespanha.onclick = () => {
     bandeiraEspanha.classList.toggle("ligado")
     bandeiraEspanha.style.filter = "grayscale(0) brightness(115%)"
     mapa.src = "img/cabecalho/menu/menuidioma/mapa_spanish.svg"
-    cor = 3  
-    }
+    cor = 3
+    contador++
+}
 listausa.onmouseover = () => {
-    if(!bandeiraUsa.classList.contains('ligado')) {
+    if (!bandeiraUsa.classList.contains('ligado')) {
         bandeiraUsa.style.filter = "grayscale(0) brightness(115%)"
     }
 }
 listausa.onmouseout = () => {
-    if(!bandeiraUsa.classList.contains('ligado')) {
+    if (!bandeiraUsa.classList.contains('ligado')) {
         bandeiraUsa.style.filter = "grayscale(1) brightness(115%)"
     }
 }
 listabrasil.onmouseover = () => {
-    if(!bandeiraBrasil.classList.contains('ligado')) {
+    if (!bandeiraBrasil.classList.contains('ligado')) {
         bandeiraBrasil.style.filter = "grayscale(0) brightness(115%)"
     }
 }
 listabrasil.onmouseout = () => {
-    if(!bandeiraBrasil.classList.contains('ligado')) {
+    if (!bandeiraBrasil.classList.contains('ligado')) {
         bandeiraBrasil.style.filter = "grayscale(1) brightness(115%)"
     }
 }
 listaespanha.onmouseover = () => {
-    if(!bandeiraEspanha.classList.contains('ligado')) {
+    if (!bandeiraEspanha.classList.contains('ligado')) {
         bandeiraEspanha.style.filter = "grayscale(0) brightness(115%)"
     }
 }
 listaespanha.onmouseout = () => {
-    if(!bandeiraEspanha.classList.contains('ligado')) {
+    if (!bandeiraEspanha.classList.contains('ligado')) {
         bandeiraEspanha.style.filter = "grayscale(1) brightness(115%)"
     }
-}
-const areaBotoes = document.querySelector('div#area_botoes')
-function deslocamento() {
-    areaBotoes.style.marginLeft = "100px"
-    areaBotoes.style.transition = ".7s ease-out"
 }
 const versao1 = document.querySelector("div.versao1")
 const versao2 = document.querySelector("div.versao2")
@@ -155,4 +164,14 @@ transparente.onmouseout = () => {
 }
 function loopa() {
     mapa.classList.toggle("loope")
+}
+const quemSomos = document.querySelector('#quemSomos')
+const versao3 = document.querySelector('.versao3')
+quemSomos.onmouseover = () => {
+    quemSomos.src = "img/cabecalho/menu/menuquemSomos/quemSomos2.svg"
+    versao3.style.display = "block"
+} 
+quemSomos.onmouseout = () => {
+    quemSomos.src = "img/cabecalho/menu/menuquemSomos/quemSomos.svg"
+    versao3.style.display = "none"
 }

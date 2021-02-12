@@ -107,13 +107,13 @@ nav ul li img {
     justify-content: center;
 }
 button {
+    width: 110px;
     border: 0px solid transparent;
     outline: 0px solid transparent;
 }
 .box_title {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(0, 0, 0, 0.247);
-    color: aqua;
     display: none;
     border-radius: 5px;
     padding: 10px 0px 5px;
@@ -125,15 +125,26 @@ button {
     text-align: center;
 }
 .versao1 {
+    color: yellow;
     top: 60px;
     right: 20px;
     width: 60px;
 }
 .versao2 {
+    color: aqua;
     top: 60px;
-    right: 130px;
+    right: 125px;
     width: 50px;
     padding: 10px 10px 5px;
+}
+.versao3 {
+    color: aqua;
+    top: 60px;
+    right: 215px;
+    width: 40px;
+    padding: 10px 10px 5px;
+    line-height: 11px;
+
 }
 #transparente {
     width: 110px;
@@ -146,6 +157,12 @@ button {
 #transparente:hover {
     cursor: pointer;
 }
+#quemSomos {
+    width: 40px;
+    padding:7px 25px;
+    cursor: pointer;
+    filter: brightness(130%);
+}
 
 
 
@@ -154,7 +171,7 @@ button {
     flex-wrap: wrap;
     width: 470px;
     margin-top: 250px;
-    margin-left: -600px;
+    margin-left: 100px;
 }
 h1 {
     margin-bottom: 50px;
@@ -166,7 +183,6 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     color: rgba(0, 0, 0, 0.74);
-    /* text-shadow: 0 0 5px aqua; */
     filter: brightness(120%);
 }
 #botao_branco {

@@ -194,13 +194,12 @@ a {
     transform: skew(10grad, 2grad);
     transition: 0.5s;
     position: absolute;
-    top: 80%;
+    top: 65%;
     left: 11%;
     opacity: 0;
 }
 .slide2 {
     animation: slide2 1.3s ease-out;
-    top: 65%;
     opacity: 1;
 }
 @keyframes slide2 {
@@ -241,23 +240,23 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     filter: brightness(120%);
     position: absolute;
-    top: 92%;
+    top: 77%;
     left: 27%;
     opacity: 0;
 }
 .slide3 {
     animation: slide3 1.3s ease-out;
-    top: 77%;
     opacity: 1;
+}
+.opacidade {
+    opacity: 1 !important;
 }
 @keyframes slide3 {
     0% {
         top: 92%;
-        opacity: 0;
     }
     70% {
         top: 72%;
-        opacity: 0.7;
     }
     100% {
         top: 77%;

@@ -1,0 +1,281 @@
+/* Configuracao Geral */
+:root {
+    --blueblackalpha658: #20404bea;
+}
+.flex {
+    display: flex;
+}
+.none {
+    display: none;
+}
+.spacing {
+    justify-content: space-between;
+}
+.pointer {
+    cursor: pointer;
+}
+/* * {outline: 1px solid chartreuse} */
+/* Fim de Configuracao Geral */
+
+
+
+/* Barra de Cabeçalho */
+header {
+    background-color: var(--blueblackalpha658);
+    height: 50px;
+}
+    /* Logoside */
+    #logoside {
+        width: 185px;
+        margin-left: 20px;
+    }
+    #brasao {
+        width: 34px;
+    }
+    #bigorion {
+        width: 135px;
+        margin-top: 2px;
+        filter: brightness(130%);
+    }
+    /* Fim da Logoside */
+    /* Menuside */
+        /* Botão de Apoio */
+        button {
+            background: yellow;
+            border: transparent;
+        }
+            /* Animação de Botão de Apoio */
+            .btn_pulso {
+                box-shadow: 0 0 0 10px transparent;
+                animation: pulse 1s infinite;
+            }
+            @keyframes pulse {
+                from {
+                    box-shadow: 0 0 0 0 yellow;
+                }
+            }
+            /*Fim de Animação de Botão de Apoio */
+        #apoio {
+            font-size: 2.1rem;
+            padding: 0 27px;
+            transition: .3s;
+            color: var(--blueblackalpha658);
+        }
+        button:hover #apoio{
+            color: aqua;
+        }
+        /* Fim de Botão de Apoio */
+        /* Botão de Idioma */
+        ul {
+            margin-right: 20px;
+        }
+        #mapa {
+            font-size: 2rem;
+            padding: 0 20px;
+            transition: .3s;
+            color: white;
+            line-height: 50px;
+        }
+            /* Animação de Botão de Idioma*/
+            .loope {
+                animation: loop 1s infinite;
+            }
+            @keyframes loop {
+                0% {
+                    line-height: 50px;
+                }
+                50% {
+                    line-height: 55px;
+                }
+                0% {
+                    line-height: 50px;
+                }
+            }
+            /* Fim de Animação de Botão de Idioma*/
+        .bandeira {
+            border-bottom: 4px solid var(--color);
+            width: 30px;
+            padding: 0 10px;
+            filter: brightness(105%);
+        }
+        /* Fim de Botão de Idioma */
+        /* Botão de Modos de Claridade */
+        #modos {
+            align-items: center;
+        }
+        #botao_modos {
+            border: 3px solid rgba(0, 255, 255, 0.75);
+            border-radius: 15px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 255, 255, 0.5);
+            width: 40px;
+            height: 18px;
+        }
+        #fundo_moon {
+            display: flex;
+            color: #e64ba0;
+            filter: brightness(130%);
+            background-color: aqua;
+            padding: 4px;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-10px) rotate(240deg);
+            transition: 0.5s;
+        }
+            /* Animação de Botão de Modos de Claridade */
+            .desloca_moon {
+                transform: translateX(10px) rotate(240deg);
+            }
+            /* Fim de Animação de Botão de Modos de Claridade */
+        #moon {
+            display: block;
+        }
+        /* Fim de Botão de Modos de Claridade */
+    /* Fim de MenuSide */
+/* Fim de Barra do Cabeçalho */
+
+
+
+/* Seção Principal do Site */
+body {
+    overflow-y: hidden;
+}
+section {
+    height: 100vh;
+    background-image: url(../img/fundosvg.svg);
+    background-size: cover;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.74);
+    filter: brightness(120%);
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    opacity: 0;
+}
+.slide {
+    animation: slide 1.3s ease-out;
+    top: 55%;
+    opacity: 1;
+}
+@keyframes slide {
+    0% {
+        top:70%; 
+        opacity: 0;
+    }
+    70% {
+        top:50%;
+    }
+    100% {
+        top:55%;
+        opacity: 1;
+    }
+}
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#btn1 {
+    width: 450px;
+    height: 100px;
+    background-color: aqua;
+    transform: skew(10grad, 2grad);
+    transition: 0.5s;
+    position: absolute;
+    top: 80%;
+    left: 11%;
+    opacity: 0;
+}
+.slide2 {
+    animation: slide2 1.3s ease-out;
+    top: 65%;
+    opacity: 1;
+}
+@keyframes slide2 {
+    0% {
+        top:80%;
+    }
+    70% {
+        top:60%;
+    }
+    100% {
+        top:65%;
+        opacity: 1;
+    }
+}
+#btn1:hover {
+    transform: skew(10grad, -1grad);
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.897);
+}
+#btn1:hover a p {
+    color: white;
+}
+#btn1 a p {
+    color: rgba(0, 0, 0, 0.808);
+    font-weight: bolder;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 1em aqua;
+}
+#btn2 {
+    width: 225px;
+    height: 50px;
+    background-color: #c34f8e;
+    transform: skew(-10grad, -3grad);
+    box-shadow: 0 0 1em #c34f8e;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: brightness(120%);
+    position: absolute;
+    top: 92%;
+    left: 27%;
+    opacity: 0;
+}
+.slide3 {
+    animation: slide3 1.3s ease-out;
+    top: 77%;
+    opacity: 1;
+}
+@keyframes slide3 {
+    0% {
+        top: 92%;
+        opacity: 0;
+    }
+    70% {
+        top: 72%;
+        opacity: 0.7;
+    }
+    100% {
+        top: 77%;
+        opacity: 1;
+    }
+}
+#btn2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 1em aqua ;
+}
+#btn2 a p {
+    color: rgba(255, 255, 255, 0.74);
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+}
+#btn2:hover a p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Fim de Seção Principal do Site */

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br, en-us, es">
-
 <head>
     <title> BIGORION SCHOOL | Seja um Fisiqueste </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
-    <meta name="description" content="BIGORION SCHOOL | Um jeito muito louco de aprender Física">
-    <meta name="keywords" content="bigorion, jogo de física, curso de física, aprender física, física divertida, exercício de física, física, aprender física de forma divertida">
+    <meta name="description" content="BIGORION SCHOOL | Dominar Física agora é para qualquer um! Venha participar dessa aventura inusitada, desafie as Leis da Física e torne-se um Fisiqueste. Aprender nunca foi tão bom!">
+    <meta name="keywords" content="bigorion, jogo de física, curso de física, aprender física, física divertida, exercício de física, física">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Ayron Matos">
     <meta name="copyright" content="Bigorion School Enterprise">
@@ -16,65 +15,56 @@
     <meta http-equiv="pragma" content="public">
     <meta http-equiv="content-language" content="pt-br, en-us, es">
     <link rel="icon" href="img/cabecalho/logoside/logotipo.svg">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet">
-    <title>Document</title>
 </head>
-<body>
-    <header>
-        <div id="container_logo">
-            <img id="brasao" src="img/cabecalho/logoside/icone.svg" alt="imagem logo">
-            <img id="bigorion" src="img/cabecalho/logoside/icone2.svg" alt="imagem bigorion">
-        </div>
-        <div id="container_menu">
-            <img id="quemSomos" src="img/cabecalho/menu/menuquemSomos/quemSomos.svg" alt="Quem nós somos">
-            <div class="box_title versao3">
-                <p lang="pt-br">Quem somos</p>
+<body onload="textFloat()">
+    <header class="flex spacing">
+        <figure id="logoside" class="flex spacing">
+            <img id="brasao" src="img/cabecalho/logoside/icone.svg" alt="logotipo no formato brasão">
+            <img id="bigorion"src="img/cabecalho/logoside/icone2.svg" alt="logotipo no formato texto">
+        </figure>
+        <div id="menuside" class="flex">
+            <div id="modos" class="flex">
+                <div id="botao_modos" class="flex">
+                    <div id="fundo_moon" class="pointer">
+                        <i id="" class="fas fa-moon"></i>
+                    </div>
+                </div>
             </div>
-            <nav id="caixa">
-                <ul>
-                    <li onclick="loopa()" id="li_main"><img id="mapa" src="img/cabecalho/menu/menuidioma/mapa.svg"></li>
-                    <li id="li_1"><img id="bandeira_usa" style="--border-bottom: 4px solid crimson"
-                            src="img/cabecalho/menu/menuidioma/bandeira_usa.svg"></li>
-                    <li id="li_2"><img id="bandeira_brasil" style="--border-bottom: 4px solid lawngreen"
-                            src="img/cabecalho/menu/menuidioma/bandeira_brasil.svg">
-                    </li>
-                    <li id="li_3"><img id="bandeira_espanha" style="--border-bottom: 4px solid darkorange"
-                            src="img/cabecalho/menu/menuidioma/bandeira_espanha.svg">
-                    </li>
-                </ul>
-            </nav>
-            <div class="box_title versao2">
-                <p lang="pt-br">escolha seu idioma</p>
-            </div>
+            <ul class="flex spacing">
+                <li id="l1" class="flex pointer"><i id="mapa" class="fas fa-globe-americas"></i></li>
+                <li id="l2" class="none pointer"><img id="b_usa" class="bandeira" style="--color: crimson; --grayscale: grayscale(1)" src="img/cabecalho/menu/menuidioma/bandeira_usa.svg"  alt="bandeira que representa idioma em inglês"></li>
+                <li id="l3" class="none pointer"><img id="b_br" class="bandeira" style="--color: lawngreen" src="img/cabecalho/menu/menuidioma/bandeira_brasil.svg"  alt="bandeira que representa idioma em português"></li>
+                <li id="l4" class="none pointer"><img id="b_es" class="bandeira" style="--color: darkorange; --grayscale: grayscale(1)" src="img/cabecalho/menu/menuidioma/bandeira_espanha.svg"  alt="bandeira que representa idioma em espanhol"></li>
+            </ul>
             <button class="btn_pulso">
+                <i id="apoio" class="fas fa-hands-helping"></i>
             </button>
-            <div id="transparente">
-                <img id="apoio" src="img/cabecalho/menu/menuapoio/apoio.svg" alt="apoio">
-            </div>
-            <div class="box_title versao1">
-                <p lang="pt-br">apoie o site</p>
-            </div>
         </div>
     </header>
-    <section>
-        <div id="area_botoes">
-            <h1 lang="pt-br">desafie as leis da física</h1>
-            <div id="botao_branco">
+    <main>
+        <section>
+            <h1 lang="pt-br, en-us, es">desafie as leis da física</h1>
+            <div id="btn1">
                 <a href="#">
-                    <p lang="pt-br">eu aceito o desafio</p>
+                    <p lang="pt-br, en-us, es">eu aceito o desafio</p>
                 </a>
             </div>
-            <div id="botao_preto">
+            <div id="btn2">
                 <a href="#">
-                    <p lang="pt-br">já sou um fisiqueste</p>
+                    <p lang="pt-br, en-us, es">já sou um fisiqueste</p>
                 </a>
             </div>
-        </div>
-    </section>
-    <script src="./header.js"></script>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c2005d54ee.js" crossorigin="anonymous"></script>
 </body>
 </html>

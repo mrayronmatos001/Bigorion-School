@@ -120,6 +120,10 @@ var c = 0
                     bEs.style.filter = "brightness(105%) grayscale(1)"
                     bBr.style.border = "0px"
                     bEs.style.border = "0px"
+                    l1.style.order = "1"
+                    l3.style.order = "2"
+                    l2.style.order = "3"
+                    l4.style.order = "4"
                     ativoUsa = true
                     ativoBr = false
                     ativoEs = false
@@ -134,6 +138,10 @@ var c = 0
                     bBr.style.filter = "brightness(105%) grayscale(0)"
                     bUsa.style.border = "0px"
                     bEs.style.border = "0px"
+                    l1.style.order = "1"
+                    l2.style.order = "2"
+                    l3.style.order = "3"
+                    l4.style.order = "4"
                     ativoUsa = false
                     ativoBr = true
                     ativoEs = false
@@ -148,6 +156,10 @@ var c = 0
                     bBr.style.filter = "brightness(105%) grayscale(1)"
                     bUsa.style.border = "0px"
                     bBr.style.border = "0px"
+                    l1.style.order = "1"
+                    l2.style.order = "2"
+                    l4.style.order = "3"
+                    l3.style.order = "4"
                     ativoUsa = false
                     ativoBr = false
                     ativoEs = true
@@ -181,14 +193,20 @@ var c = 0
 // Script para Botão de Modo de Claridade
 const fundoMoon = document.querySelector('#fundo_moon')
 const modos = document.querySelector('#modos')
+const sun = document.querySelector('#sun')
+const moon = document.querySelector('#moon')
 modos.onmouseover = () => fora2 = false
 modos.onmouseout = () => fora2 = true
 fundoMoon.onclick = () => {
     if(!alavanca2) {
-        fundoMoon.style.transform = "translateX(10px) rotate(240deg)"
+        fundoMoon.style.transform = "translateX(1.3ch) rotate(240deg)"
+        sun.remove()
+        fundoMoon.innerHTML = "<i id='moon' class='fas fa-moon'></i>"
         alavanca2 = true
     } else {
         fundoMoon.style.transform = "translateX(-10px) rotate(240deg)"
+        fundoMoon.innerHTML = " "
+        fundoMoon.innerHTML = "<i id='sun' class='fas fa-sun'></i>"
         alavanca2 = false
     }
 }

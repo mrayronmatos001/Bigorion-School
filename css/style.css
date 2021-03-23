@@ -1,4 +1,7 @@
 /* Configuracao Geral */
+html {
+    font-size: 100%;
+}
 :root {
     --blueblackalpha658: #20404bea;
 }
@@ -22,19 +25,19 @@
 /* Barra de Cabeçalho */
 header {
     background-color: var(--blueblackalpha658);
-    height: 50px;
+    height: 3.5vw;
 }
     /* Logoside */
     #logoside {
-        width: 185px;
-        margin-left: 20px;
+        width:14vw;
+        margin-left: 1.3rem;
     }
     #brasao {
-        width: 34px;
+        width: 2.5vw;
     }
     #bigorion {
-        width: 135px;
-        margin-top: 2px;
+        width: 10vw;
+        margin-top: .2rem;
         filter: brightness(130%);
     }
     /* Fim da Logoside */
@@ -46,7 +49,7 @@ header {
         }
             /* Animação de Botão de Apoio */
             .btn_pulso {
-                box-shadow: 0 0 0 10px transparent;
+                box-shadow: 0 0 0 1.3ch transparent;
                 animation: pulse 1s infinite;
             }
             @keyframes pulse {
@@ -56,25 +59,27 @@ header {
             }
             /*Fim de Animação de Botão de Apoio */
         #apoio {
-            font-size: 2.1rem;
-            padding: 0 27px;
+            font-size: 2vw;
+            padding: 0 1.8rem;
             transition: .3s;
             color: var(--blueblackalpha658);
         }
         button:hover #apoio{
-            color: aqua;
+            color: #ff008c;
+            filter: brightness(150%);
         }
         /* Fim de Botão de Apoio */
         /* Botão de Idioma */
         ul {
-            margin-right: 20px;
+            margin-right: 1rem;
         }
         #mapa {
-            font-size: 2rem;
-            padding: 0 20px;
+            font-size: 2.2vw;
             transition: .3s;
             color: white;
-            line-height: 50px;
+            line-height: 3.5vw;
+            margin-right: .7rem;
+            margin-left: 1.5rem;
         }
             /* Animação de Botão de Idioma*/
             .loope {
@@ -82,55 +87,56 @@ header {
             }
             @keyframes loop {
                 0% {
-                    line-height: 50px;
+                    line-height: 3.5vw;
                 }
                 50% {
-                    line-height: 55px;
+                    line-height: 3.7vw;
                 }
                 0% {
-                    line-height: 50px;
+                    line-height: 3.5vw;
                 }
             }
             /* Fim de Animação de Botão de Idioma*/
         .bandeira {
             border-bottom: 4px solid var(--color);
-            width: 30px;
-            padding: 0 10px;
+            width: 2vw;
+            padding: 0 .7rem;
             filter: brightness(105%);
         }
         /* Fim de Botão de Idioma */
         /* Botão de Modos de Claridade */
+        #sun {
+            color: white;
+            size: 5pt;
+        }
+        /* Fim de Cores do Modo Escuro */
         #modos {
             align-items: center;
         }
         #botao_modos {
-            border: 3px solid rgba(0, 255, 255, 0.75);
+            border: .2vw solid rgba(0, 255, 255, 0.75);
             border-radius: 15px;
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 255, 255, 0.5);
-            width: 40px;
-            height: 18px;
+            width: 2vw;
+            height: 1vw;
         }
         #fundo_moon {
             display: flex;
-            color: #e64ba0;
+            color: #20404bea;
             filter: brightness(130%);
             background-color: aqua;
-            padding: 4px;
+            padding: .3vw;
             border-radius: 50%;
-            width: 22px;
-            height: 22px;
+            width: 1.3vw;
+            height: 1.3vw;
+            font-size: 1.3vw;
             justify-content: center;
             align-items: center;
             transform: translateX(-10px) rotate(240deg);
             transition: 0.5s;
         }
-            /* Animação de Botão de Modos de Claridade */
-            .desloca_moon {
-                transform: translateX(10px) rotate(240deg);
-            }
-            /* Fim de Animação de Botão de Modos de Claridade */
         #moon {
             display: block;
         }
@@ -142,19 +148,21 @@ header {
 
 /* Seção Principal do Site */
 body {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 section {
+    width: 100vw;
     height: 100vh;
-    background-image: url(../img/fundosvg.svg);
+    background-image: url(../img/fundo.svg);
     background-size: cover;
+    overflow: hidden;
 }
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 4px;
+    letter-spacing: .1ch;
+    word-spacing: .2ch;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 2.5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -188,15 +196,16 @@ a {
     text-decoration: none;
 }
 #btn1 {
-    width: 450px;
-    height: 100px;
+    width: 30vw;
+    height: 14vh;
     background-color: aqua;
     transform: skew(10grad, 2grad);
-    transition: 0.5s;
+    transition: opacity 0.5s;
     position: absolute;
     top: 65%;
     left: 11%;
     opacity: 0;
+    transition: 0.5s;
 }
 .slide2 {
     animation: slide2 1.3s ease-out;
@@ -226,14 +235,14 @@ a {
     color: rgba(0, 0, 0, 0.808);
     font-weight: bolder;
     text-align: center;
-    line-height: 100px;
-    font-size: 30px;
+    line-height: 14vh;
+    font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 0 1em aqua;
 }
 #btn2 {
-    width: 225px;
-    height: 50px;
+    width: 28ch;
+    height: 7vh;
     background-color: #c34f8e;
     transform: skew(-10grad, -3grad);
     box-shadow: 0 0 1em #c34f8e;
@@ -271,7 +280,7 @@ a {
     color: rgba(255, 255, 255, 0.74);
     font-weight: bolder;
     text-align: center;
-    line-height: 50px;
+    line-height: 7vh;
 }
 #btn2:hover a p {
     color: white;
